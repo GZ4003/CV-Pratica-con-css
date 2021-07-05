@@ -1,9 +1,12 @@
-body{
-  height: 100vh;
-  width: 100vw;
-  background-color: aqua;
+@import "../variables/_colors";
+@import "../variables/_mixins";
 
+
+body{
+  @include Imagesize(100vw,100vh);
+  background-color: $background-color;
 }
+
   @media(min-width:768px){
     h1{
       display: flex;
